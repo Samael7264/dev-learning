@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      background-color: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    .outer{
+      display: grid;
+      grid-template: 414px 130px 157px 20px/ 320px 198px 153px 50px;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      border: none;
+      gap: 9px;
+    }
+    .red{
+      background-color: red;
+      grid-area: 1/1/2/2;
+    }
+    .White{
+      background-color: #F0F1EC;
+    }
+    .one{
+      grid-column: span 3;
+    }
+    .two{
+      grid-row: span 2;
+    }
+    .three{
+      grid-area: 2/2/4/4;
+    }
+    .Blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .four{
+      grid-row: span 2;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .black{
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner red"> </div>
+    <div class="inner White one"> </div>
+    <div class="inner White two"> </div>
+    <div class="inner White three"> </div>
+    <div class="inner Blue"> </div>
+    <div class="inner White four"> </div>
+    <div class="inner White five"> </div>
+    <div class="inner yellow"> </div>
+    <div class="inner black"> </div>
+  </div>
+</body>
+
+</html>
