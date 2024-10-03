@@ -13,6 +13,12 @@ var loveScore = Math.ceil(100*(Math.random()))
 
 if(loveScore > 75){
     console.log("Your love score is " + loveScore + "%. You guys are made for each other.");
+} else if (loveScore > 50) {
+    console.log("Your love score is " + loveScore + "%. You are like Bread and Butter.");
+} else if (loveScore > 25) {
+    console.log("Your love score is " + loveScore + "%. You are like tea and honey.");
 } else {
-    console.log("Your love score is " + loveScore + "%.");
+    console.log("Your love score is " + loveScore + "%. You go together like oil and water.");
 }
+
+
