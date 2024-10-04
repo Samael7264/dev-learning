@@ -5,7 +5,7 @@ var n = Math.random(); // Genrates random number between 0 to 1 to a 16 digit de
 //Psuedo Dice Roll Simulator
 console.log(Math.ceil(6*(Math.random(10))));
 
-//Refer to the khan academy video - "Randomness" to learn more about Psuedo Random and Random Numbers.
+//Personal Note: Refer to the khan academy video - "Randomness" to learn more about Psuedo Random and Random Numbers.
 
 prompt("Enter your name: ");
 prompt("Enter your lover's name: ");

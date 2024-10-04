@@ -5,16 +5,26 @@
 // }
 
 for (var i=0; i< document.querySelectorAll(".drum").length; i++ ){
-    document.querySelectorAll(".drum")[i].addEventListener("click", function(){handleClick(this)});
-    
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+        handleClick(this.innerText);
+        addAnimation(this.innerText);
+    });    
+}
+
+for (var i=0; i< document.querySelectorAll(".drum").length; i++ ){
+    document.addEventListener("keydown", (event) => {
+        handleClick(event.key);
+        addAnimation(event.key);
+    });
 }
 
 // document.querySelectorAll("button")[0].addEventListener("click", handleClick);
-var delayInMilliseconds = 1000; //1 second
+var delayInMilliseconds = 100;  //0.1 second
+
+//function to play sounds based on the element interacted with
 function handleClick(element){
     var audio;
-    var ele = element.innerText;
-    switch(ele){
+    switch(element){
         case 'w':
             audio = new Audio("./sounds/crash.mp3")
             break;
@@ -36,7 +46,7 @@ function handleClick(element){
         case 'l':
              audio = new Audio("./sounds/tom-4.mp3")
             break;      
-
+        default: console.log(ele);
     }
     audio.play();
     // this.style.color = "white";
@@ -46,4 +56,12 @@ function handleClick(element){
     //     ele.style.color = "red";//your code to be executed after 1 second
     // }, delayInMilliseconds);
 
+}
+
+//function to add animations based on the element interacted with
+function addAnimation(element){
+    document.querySelector("." + element).classList.add("pressed");     //Add the class pressed for the pressed button
+    setTimeout(function() {
+        document.querySelector("." + element).classList.remove("pressed");     //Remove the class pressed after waiting for 0.1 second
+    }, delayInMilliseconds);
 }
