@@ -11,4 +11,4 @@ Node is a computer environent where user inputs are read and evaluated, and then
 4. Custom GPT Creation using OpenAI API
 5. Open Source Contribution
 6. HTTP Protocols - When to use which one?
-7. 
+7. async, const, let, await, try/catch all these keywords for node
