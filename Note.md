@@ -12,3 +12,6 @@ Node is a computer environent where user inputs are read and evaluated, and then
 5. Open Source Contribution
 6. HTTP Protocols - When to use which one?
 7. async, const, let, await, try/catch all these keywords for node
+8. Native Script for React Native or App Front End
+9. Javascript promises 
+10. 

@@ -1,0 +1,22 @@
+body{
+    background-color: #E2F1E7;
+    
+    justify-content: center;
+    color: #387478;
+}
+
+div.feature{display: flex;
+    background-color: #E2F1E7;
+    
+    justify-content: center;
+    color: #387478;
+}
+
+h1{
+    color: #243642;
+    text-align: center;
+}
+
+button{
+    background-color: whitesmoke;
+}
